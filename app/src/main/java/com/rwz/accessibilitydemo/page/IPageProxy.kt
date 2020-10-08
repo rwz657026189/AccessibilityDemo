@@ -8,8 +8,10 @@ import android.view.accessibility.AccessibilityNodeInfo
  * author： rwz
  * description：
  **/
-interface IPageProxy {
+const val CLICK_DELAY = 300L
 
+interface IPageProxy {
+    
     fun onWindowChanged(rootNode: AccessibilityNodeInfo, event: AccessibilityEvent)
 
     fun onClickView(rootNode: AccessibilityNodeInfo, event: AccessibilityEvent)
